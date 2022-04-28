@@ -1165,16 +1165,47 @@ footer .social-media{
 }
 
 /* --------------- Time table Section Styling------------------ */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
 .time-table .container{
     display: grid;
     grid-template-columns: 2fr 1fr;
     column-gap: 2rem;
 }
 .timetable{
-    
+    background-color: var(--bg-color-transparent);
+    color: var(--text-color); 
+    border-radius: 20px; 
+    box-shadow: 0 5px 20px 0.1px rgba(0,0,0,0.1);
+}
+
+
+.time-table thead tr th{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--main-color-1);
+    font-weight: 300;
+    overflow: hidden;
 }
 
 .timetable .table-desc{
-    border: 1px solid;
+    text-align: justify;
     width: 100%;
+    font-size: 1rem;
+}
+
+.timetable .table-desc tbody tr th{
+    font-weight: 500;
+}
+
+tbody tr th{
+    padding: 0 10px;
+}
+
+.timetable-info .heading{
+    font-size: 2.4rem; 
 }
